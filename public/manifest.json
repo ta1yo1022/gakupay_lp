@@ -1,0 +1,24 @@
+{
+  "name": "GakuPay",
+  "short_name": "GakuPay",
+  "description": "並ばず買える、学食体験。学食チケットの購入・管理アプリ",
+  "start_url": "/shop",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#facc15",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
