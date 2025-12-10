@@ -5,6 +5,29 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="text-3xl sm:text-5xl flex flex-col items-center">
+      {/* Sponsor Recruitment Banner */}
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeq6hDRFIO9aSg-RwuTtbWwsTXcaPAxbEviNxMTSOIxVvkvpQ/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-4 sm:px-6 hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 cursor-pointer"
+      >
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-center sm:text-left">
+          <div className="flex items-center gap-2">
+            <Megaphone className="text-slate-900 shrink-0" size={24} />
+            <p className="text-base sm:text-lg font-bold text-slate-900">
+              学生の支援を行ってくださる<span className="hidden sm:inline">プラットフォーム</span>スポンサー募集中
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-sm sm:text-base font-semibold text-slate-800">
+              月額2万円でプラットフォーム内に広告を掲載可能
+            </span>
+            <ArrowRight className="text-slate-900 shrink-0" size={20} />
+          </div>
+        </div>
+      </a>
+
       <section className="flex sm:flex-row items-center gap-20 mt-20 flex-col px-5">
         <div className="flex-col order-2 sm:order-1">
           <h1 className="font-bold max-w-lg">現金決済から解放。<br />学校食堂の<span className="bg-yellow-300">「速い・安全・無駄がない」</span>をGakuPayで実現。</h1>
@@ -242,6 +265,17 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeq6hDRFIO9aSg-RwuTtbWwsTXcaPAxbEviNxMTSOIxVvkvpQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-yellow-400 text-black font-bold h-14 rounded-full gap-2 px-8 mt-8 flex items-center hover:bg-yellow-500 text-lg w-full sm:w-auto">
+                  <span>スポンサー申し込み</span>
+                  <ArrowRight className="text-black" size={20} />
+                </Button>
+              </a>
             </div>
 
             {/* Visuals for Sponsorship */}
